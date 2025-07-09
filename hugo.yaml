@@ -10,6 +10,7 @@ markup:
 params:
   env: "production"
   defaultTheme: light
+  disableThemeToggle: false
 
 # Google Analytics configuration
 services:

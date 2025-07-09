@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y wget git ca-certificates && \
     rm -rf /var/lib/apt/lists/*
 
 # Set Hugo version
-ARG HUGO_VERSION=0.142.0
+ARG HUGO_VERSION=0.146.0
 
 # Detect system architecture and download the appropriate Hugo version
 RUN ARCH=$(uname -m) && \
