@@ -206,7 +206,7 @@ You'll see attempt counters tick up in the tmux window. Ignore them. When capaci
 
 A 4-core/24GB ARM box for $0/month is genuinely useful:
 
-- **[Tailscale](https://tailscale.com)** or **[Cloudflare Tunnel](https://www.cloudflare.com/products/tunnel/)** for stable access without exposing a public IP
+- **[Pangolin](https://github.com/fosrl/pangolin)** for zero-trust networking — self-hosted, no third-party relay, gives you stable access without exposing a public IP
 - **Docker host** for running side projects without paying DigitalOcean
 - **Personal media server** — Plex, Jellyfin, or Navidrome on a box that doesn't spin down
 - **SearxNG or other self-hosted tools** — 24 GB of RAM goes a long way for things like local LLM inference
