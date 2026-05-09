@@ -1,14 +1,8 @@
 ---
 title: "Stop Watching One Claude Code Session. Run Four."
 date: 2026-05-09
-author: "Alan Mond"
 tags: ["claude-code", "tmux", "ai", "productivity", "terminal", "dotfiles"]
 draft: false
-cover:
-  image: "cover.jpg"
-  alt: "Run Four. Title card for a post about running four parallel Claude Code agents in a tmux 2x2 grid."
-  relative: true
-  hidden: true
 ---
 
 ### TL;DR
