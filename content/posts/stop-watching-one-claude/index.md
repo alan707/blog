@@ -2,7 +2,7 @@
 title: "Stop Watching One Claude Code Session. Run Four."
 date: 2026-05-09
 tags: ["claude-code", "tmux", "ai", "productivity", "terminal", "dotfiles"]
-draft: true
+draft: false
 ---
 
 ### TL;DR
