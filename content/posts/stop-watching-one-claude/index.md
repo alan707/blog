@@ -1,5 +1,5 @@
 ---
-title: "How to Run Four Claude Code Agents at Once (and Keep Your Terminal Feeling Native)"
+title: "Stop Watching One Claude Code Session. Run Four."
 date: 2026-05-09
 tags: ["claude-code", "tmux", "ai", "productivity", "terminal", "dotfiles"]
 draft: true
@@ -8,6 +8,8 @@ draft: true
 ### TL;DR
 
 Claude Code is best when you supervise it: read the diff, push back, redirect. But supervising one agent at a time leaves you idle while it thinks. The productivity hack is to run four agents in parallel, each in its own pane, and rotate through approvals as they pause for input. tmux is the right tool for that, except every default tmux config breaks the things that make a Mac terminal a Mac terminal. Mouse scrolling. Drag-to-copy. Click-to-focus. This post is the 40 lines of config that fix all of it. [Gist here.](https://gist.github.com/alan707/1358db6e81072eaafb1a92105a97fc7b)
+
+<video src="demo.mp4" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 1000px; border-radius: 6px; display: block; margin: 1.5rem auto;"></video>
 
 ### The supervised parallel-agent workflow
 
@@ -25,6 +27,21 @@ The four shapes (*draft, build, research, review*) cover most of what I do at th
 The bottleneck stops being "how fast can the model think" and starts being "how fast can I read and respond." That's the right bottleneck. That's *me actually doing my job*.
 
 The catch: this only works if switching between agents is friction-free. If I have to leave the keyboard, hunt for a window, mash a keybinding, or fight scrollback, it falls apart. So the terminal has to feel native.
+
+### Yeah, but why?
+
+Fair question. Claude Code already parallelizes work in a few ways, and the four-pane setup might look like reinventing what the tool already does:
+
+- **Subagents** (the Agent tool) spawn parallel research and coding tasks inside one conversation.
+- **Background tasks** (`run_in_background`) let one Claude fire off a long-running command and keep going.
+- **Git worktrees** (`EnterWorktree`) isolate experiments without leaving the session.
+- **Session forking** (`claude --fork-session` or `/branch`) branches one conversation at a fork-in-the-road moment so you can explore approach A and approach B from the same shared context.
+
+All real, all useful. A couple of them you'll actually want to *combine* with the four-pane setup. Worktrees plus four panes is a killer combo: each pane gets its own isolated working tree, and four agents can edit overlapping files without conflicts.
+
+But none of them solve the same problem. Subagents, background tasks, and forking all parallelize *the agent* within one task you're driving. The four-pane pattern parallelizes *you* across unrelated tasks you're actively supervising. Four conversations, four contexts, four approval streams I'm bouncing between in real time. Subagents can't help with that part because I'm the bottleneck, and the only way to widen me is to give me four narrow streams to attend instead of one wide one.
+
+(Anthropic's **Managed Agents** is also out there, but it's a different product class: cloud-hosted, headless, fire-and-forget. It's the opposite move. Useful, just orthogonal.)
 
 ### What "native" means here
 
