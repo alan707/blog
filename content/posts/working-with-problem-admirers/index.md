@@ -92,7 +92,7 @@ A handful of tactics that have worked for me, in roughly the order I deploy them
 - **Book a 20-minute pre-meeting 1:1.** *"I want to get your read on this before I send it around."* That's the whole pitch. Buys their best objections in a low-stakes setting and gives them ownership of the doc. The move I should have made before HIL.
 - **Ask for objections explicitly.** *"What's the strongest argument against this?"* Phrase it as a steel-man request, not a risk dump. Most problem admirers light up. It's the version of their job they actually want to be doing.
 - **Build the "Alternatives Considered" section *first*.** Before the proposal itself. Pre-load the predictable objections with worked-out answers. Pre-empts most of the comments you'd otherwise eat in the review.
-- **Bring data for the top 3 predictable objections.** *"I think this will scale"* is an opinion. *"Here's a load test against staging at 12k QPS"* ends the conversation.
+- **Bring data for the top 3 predictable objections.** *"I think it's stable"* is an opinion. *"50 green runs on one VM, 50 more on another"* ends the conversation.
 - **Find the need underneath the nitpick.** The surface objection often isn't the real concern. They got burned by a similar project, they own the system you're touching, their team got dinged for an adjacent outage. Address the underlying thing and the surface objections quiet down.
 
 ### In the Meeting Itself
