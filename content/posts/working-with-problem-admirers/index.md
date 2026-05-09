@@ -109,7 +109,7 @@ I've been on the other side of this too. It's a useful role, and the org genuine
 
 **Lead with the strongest version of the proposal.** Steel-man before you stress-test. Show that you understood what the proposer was actually trying to do, in their best framing, before you list what could go wrong. This is the single highest-leverage move you can make as a reviewer, and it's almost free.
 
-**Propose mitigations, not just risks.** *"This won't work because X"* is one comment. *"This will work if we handle X by doing Y"* is also one comment, but it's the comment that actually ships the project. Same observation, different value.
+**Propose a path forward, not just a no.** *"This won't work because X"* is one comment. *"What if we add eBPF observability to the existing pipeline first, and let the data tell us where the bottleneck actually is?"* is also one comment. The first ends the conversation. The second moves it onto constructive, additive ground.
 
 **Choose your channel.** Nine comments on a public doc reads as obstruction. The same nine comments delivered in a 1:1 read as care. The content is identical. The framing isn't.
 
