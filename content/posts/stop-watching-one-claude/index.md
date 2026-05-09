@@ -8,6 +8,7 @@ cover:
   image: "cover.jpg"
   alt: "Run Four. Title card for a post about running four parallel Claude Code agents in a tmux 2x2 grid."
   relative: true
+  hidden: true
 ---
 
 ### TL;DR
