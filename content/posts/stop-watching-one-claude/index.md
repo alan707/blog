@@ -3,6 +3,10 @@ title: "Stop Watching One Claude Code Session. Run Four."
 date: 2026-05-09
 tags: ["claude-code", "tmux", "ai", "productivity", "terminal", "dotfiles"]
 draft: false
+cover:
+  image: "cover.jpg"
+  alt: "Four Claude Code sessions running in parallel in a tmux 2x2 grid: one outlining a blog post, one reviewing a bazel-docs PR, one researching managed Postgres providers, one writing a poem about the workflow."
+  relative: true
 ---
 
 ### TL;DR
