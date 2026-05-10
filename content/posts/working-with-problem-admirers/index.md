@@ -119,13 +119,13 @@ The meeting shouldn't be a rubber stamp just to get the design through. You genu
 
 I've been on the other side of this too. It's a useful role, and the org genuinely needs you. But there's a useful version and a destructive version, and the line between them is thinner than it feels from the inside.
 
-**Lead with the strongest version of the proposal.** Steel-man before you stress-test. Show that you understood what the proposer was actually trying to do, in their best framing, before you list what could go wrong. This is the single highest-leverage move you can make as a reviewer, and it's almost free.
+**Assume good intent.** Start from the premise that the person proposing the idea is trying to solve a real problem, not sneak something bad past the org. They may be missing context, underestimating a risk, or aiming at the wrong layer of the system. That does not mean the proposal is careless. With the right nudge, they may arrive at the better version themselves.
 
 **Propose a path forward, not just a no.** *"This won't work because X"* is one comment. *"What if we add eBPF observability to the existing pipeline first, and let the data tell us where the bottleneck actually is?"* is also one comment. The first ends the conversation. The second moves it onto constructive, additive ground.
 
 **Choose the right channel.** If something is seriously wrong, reach out directly first. A quick Slack message lets the author understand the concern before the public review becomes a surprise debate.
 
-**Notice when you're admiring instead of solving.** If you find the *problem* more interesting than any possible *solution*, that's a signal. The role you want to play is "rigorous co-author." The role you want to avoid is "person who enjoys watching ideas die." The first is rare and valuable. The second is common and corrosive, and it's often hard to tell which one you are without asking.
+**Notice when you're admiring instead of solving.** If you find the *problem* more interesting than any possible *solution*, that's a signal. The role you want to play is "rigorous co-author." The role you want to avoid is "person who enjoys watching ideas die." The first is rare and valuable. The second is common and corrosive, and it is harder to distinguish from the inside than most people think.
 
 ### Wrapping Up
 
