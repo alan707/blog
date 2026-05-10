@@ -9,6 +9,8 @@ draft: false
 
 **TL;DR.** Problem admirers feel like blockers, but if you handle them right *before* the design review, they're often the most valuable reviewers you have. Their objections become your FAQ. Ignore them and you ship with avoidable wounds. Listen too much and the project dies in committee. This post is about threading that needle.
 
+{{< figure src="bertram_gilfoyle_in_silicon_valley.webp" alt="Bertram Gilfoyle from HBO's Silicon Valley" caption="Every org has its Gilfoyle. *Silicon Valley* (HBO)." >}}
+
 ### The 400-Repo Tax
 
 A friend was telling me about a company he works at with around 400 repos. Someone proposed a small process change: let three trusted staff SREs bump a shared internal API version across all repos without per-team approval. The change was mechanical. The risk was bounded. The blast radius was understood, and the alternative was 400 PRs, one per team, dragged through 400 different reviewers on 400 different priority lists.
