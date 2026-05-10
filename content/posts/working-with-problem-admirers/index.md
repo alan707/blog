@@ -1,6 +1,6 @@
 ---
 title: "Death by a Thousand Questions: How to Jiu-Jitsu Your Problem Admirers"
-date: 2026-05-09
+date: 2026-05-16
 tags: ["engineering-culture", "design-reviews", "communication", "career"]
 draft: false
 ---
