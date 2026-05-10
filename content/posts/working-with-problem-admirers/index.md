@@ -119,7 +119,7 @@ The meeting shouldn't be a rubber stamp just to get the design through. You genu
 
 I've been on the other side of this too. It's a useful role, and the org genuinely needs you. But there's a useful version and a destructive version, and the line between them is thinner than it feels from the inside.
 
-**Assume good intent.** Start from the premise that the person proposing the idea is trying to solve a real problem, not sneak something bad past the org. They may be missing context, underestimating a risk, or aiming at the wrong layer of the system. That does not mean the proposal is careless. With the right nudge, you can help them figure out what is the best solution for the organization.
+**Assume good intent.** Start from the premise that the person proposing the idea is trying to solve a real problem, not sneak something bad past the org. They may be missing context, underestimating a risk, or aiming at the wrong layer of the system. That does not make the proposal careless. If you see a better path, help them get there. The useful version of this role is not pointing at the flaw and walking away. It is helping the team arrive at a solution that survives the concern.
 
 **Propose a path forward, not just a no.** *"This won't work because X"* is one comment. *"What if we add eBPF observability to the existing pipeline first, and let the data tell us where the bottleneck actually is?"* is also one comment. The first ends the conversation. The second moves it onto constructive, additive ground.
 
