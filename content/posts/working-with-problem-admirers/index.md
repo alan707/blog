@@ -39,6 +39,8 @@ If you've worked at any company larger than about 15 engineers, you already know
 
 I'll call these folks **problem admirers**: people who genuinely love thinking about everything that could go wrong with your idea, and who, with the best of intentions, will talk a good proposal into a slow death.
 
+Most of them aren't blockers. They're risk-sensitive engineers using the wrong interface.
+
 ### The Other Failure Mode
 
 The 400-repo story is what happens when problem admirers win. There's a symmetric failure mode I want to be honest about, because I've lived the other side of it.
@@ -68,11 +70,9 @@ It took me a while to internalize this, but the problem admirer is, more often t
 
 A few reframes that helped me get there.
 
-**They help make your idea better.** Every "but what about X" is a free QA pass, if you can hear it before the meeting instead of in the review itself. The objection that lands at the design review is the same objection you would have eaten in production six weeks later. It's better to spend an hour on it now.
+**Advanced idea validation.** Every "but what about X" is the same objection you would have eaten at the design review or in production six weeks later. Satisfy your problem admirer beforehand and the room's questions feel familiar, because they're literally the same questions. The problem admirer has done your prep for you.
 
 **They surface institutional memory.** They remember the 2021 attempt that failed, and *why*. They know why that library still needs the local patch, why nobody dares bump that dependency, which "simple" migration is anything but. New hires can't give you that. Even staff engineers two years in usually can't. The problem admirer often can, and the proposal you write after talking to them is one that doesn't repeat a mistake your org has already paid for.
-
-**They're a proxy for your skeptical reviewers.** If you can satisfy your problem admirer, the questions in the review will feel familiar, because they will literally be the same questions. The problem admirer has done your prep for you.
 
 **Their objections become your "Alternatives Considered" section.** Which, if you've ever shepherded a design doc through a real review, is the section that gets the doc approved. Reviewers want to see that you've thought about the obvious failure modes. Problem admirers will hand you that list for free, in writing, in the comments.
 
@@ -104,6 +104,8 @@ A handful of tactics that have worked for me, in roughly the order I deploy them
 
 - **Book a 20-minute pre-meeting 1:1.** *"I want to get your read on this before I send it around."* That's the whole pitch. Buys their best objections in a low-stakes setting and gives them ownership of the doc. The move I should have made before HIL.
 - **Send a Slack message with the main points first.** Ask for feedback on each major point of your proposal. You'd be surprised how many things they might already agree on. Once you've identified the contention areas, use the meeting to highlight those.
+
+> Not every objection deserves equal weight. A good objection changes the design, rollout, measurement, or rollback. A weak objection only expands the possibility space. Your job isn't to answer every possible concern. It's to separate material risk from speculative drag.
 
 ### In the Meeting Itself
 
