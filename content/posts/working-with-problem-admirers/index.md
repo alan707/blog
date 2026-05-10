@@ -109,7 +109,7 @@ A handful of tactics that have worked for me, in roughly the order I deploy them
 
 ### In the Meeting Itself
 
-The meeting shouldn't be a rubber stamp just to get the design through. You genuinely want feedback on rollout strategy, timeline, and the contention areas you surfaced earlier.
+The meeting shouldn't be a rubber stamp just to get the design through. You genuinely want feedback on rollout strategy, timeline, and the contention areas surfaced earlier.
 
 - **Open by thanking your problem admirer by name** for their pre-review feedback. Signals to the room that the work has been vetted, and locks them into a collaborative posture publicly.
 - **Time-box live, escalate async.** When a new objection lands, default to *"Great point, let's take that to the doc so we don't lose it."* Validates the question without surrendering the agenda. The doc is a much better venue for working through a real objection than fifteen people watching a clock.
