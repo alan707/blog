@@ -5,7 +5,7 @@ tags: ["engineering-culture", "design-reviews", "communication", "career"]
 draft: false
 ---
 
-> A *problem admirer* is someone who falls in love with everything that could go wrong with your idea, and forgets that the idea was supposed to fix something.
+> A *problem admirer* is someone who can describe every reason an idea might fail, but does not feel responsible for helping it succeed.
 
 **TL;DR.** Problem admirers feel like blockers, but if you handle them right *before* the design review, they're often the most valuable reviewers you have. Their objections become your FAQ. Ignore them and you ship with avoidable wounds. Listen too much and the project dies in committee. This post is about threading that needle.
 
