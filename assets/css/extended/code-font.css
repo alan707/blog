@@ -1,0 +1,7 @@
+/* Force a clean monospace stack for code blocks and inline code,
+   overriding browser/OS default monospace if the reader has set a quirky one. */
+.post-content pre,
+.post-content pre code,
+.post-content code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
