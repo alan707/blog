@@ -87,7 +87,7 @@ A reframe table I keep in my head when I feel my shoulders tightening at a comme
 
 If problem admirers are net positive, why does working with them feel so terrible?
 
-- **Asymmetry of effort.** A thirty-second objection generates three hours of work. *"What I'd like to see is validation that this won't break compatibility with a release that's five years old."* Twelve seconds to type, a week to run down. Multiply by nine comments and you've generated someone's quarter from an afternoon of doc-scrolling and morning coffee.
+- **Asymmetry of effort.** A thirty-second objection can generate three hours of work. *"What I'd like to see is validation that this won't break compatibility with a release that's five years old."* Twelve seconds to type, a week to run down. That is the hidden cost of casual skepticism: it can turn a review into an unplanned project.
 - **They rarely propose solutions.**  (I was going to leave this one blank because that is exactly what a problem admirer's comment would look like). Jokes aside, the lack of solutions seems a bit adversarial, but they feel like they're helping by pointing out the gaps. 
 - **Public-channel objections feel like attacks**, even when they're not intended that way. When someone realizes their design doc is littered with comments, the proposer feels called out publicly.
 
