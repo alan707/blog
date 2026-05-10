@@ -39,6 +39,8 @@ If you've worked at any company larger than about 15 engineers, you already know
 
 I'll call these folks **problem admirers**: people who genuinely love thinking about everything that could go wrong with your idea, and who, with the best of intentions, will talk a good proposal into a slow death.
 
+Most of them aren't blockers. They're risk-sensitive engineers using the wrong interface.
+
 ### The Other Failure Mode
 
 The 400-repo story is what happens when problem admirers win. There's a symmetric failure mode I want to be honest about, because I've lived the other side of it.
@@ -68,11 +70,9 @@ It took me a while to internalize this, but the problem admirer is, more often t
 
 A few reframes that helped me get there.
 
-**They help make your idea better.** Every "but what about X" is a free QA pass, if you can hear it before the meeting instead of in the review itself. The objection that lands at the design review is the same objection you would have eaten in production six weeks later. It's better to spend an hour on it now.
+**They make the idea better.** Every "but what about X?" is a chance to find the sharp edges early, before the review turns into discovery. The objection that derails a design review is often the same issue you would have discovered in production six weeks later. Better to spend an hour on it now.
 
 **They surface institutional memory.** They remember the 2021 attempt that failed, and *why*. They know why that library still needs the local patch, why nobody dares bump that dependency, which "simple" migration is anything but. New hires can't give you that. Even staff engineers two years in usually can't. The problem admirer often can, and the proposal you write after talking to them is one that doesn't repeat a mistake your org has already paid for.
-
-**They're a proxy for your skeptical reviewers.** If you can satisfy your problem admirer, the questions in the review will feel familiar, because they will literally be the same questions. The problem admirer has done your prep for you.
 
 **Their objections become your "Alternatives Considered" section.** Which, if you've ever shepherded a design doc through a real review, is the section that gets the doc approved. Reviewers want to see that you've thought about the obvious failure modes. Problem admirers will hand you that list for free, in writing, in the comments.
 
@@ -105,9 +105,11 @@ A handful of tactics that have worked for me, in roughly the order I deploy them
 - **Book a 20-minute pre-meeting 1:1.** *"I want to get your read on this before I send it around."* That's the whole pitch. Buys their best objections in a low-stakes setting and gives them ownership of the doc. The move I should have made before HIL.
 - **Send a Slack message with the main points first.** Ask for feedback on each major point of your proposal. You'd be surprised how many things they might already agree on. Once you've identified the contention areas, use the meeting to highlight those.
 
+> Not every objection deserves equal weight. A good objection changes the design, rollout, measurement, or rollback. A weak objection only expands the possibility space. Your job isn't to answer every possible concern. It's to separate material risk from speculative drag.
+
 ### In the Meeting Itself
 
-The meeting shouldn't be a rubber stamp just to get the design through. You genuinely want feedback on rollout strategy, timeline, and the contention areas you surfaced earlier.
+The meeting shouldn't be a rubber stamp just to get the design through. You genuinely want feedback on rollout strategy, timeline, and the contention areas surfaced earlier.
 
 - **Open by thanking your problem admirer by name** for their pre-review feedback. Signals to the room that the work has been vetted, and locks them into a collaborative posture publicly.
 - **Time-box live, escalate async.** When a new objection lands, default to *"Great point, let's take that to the doc so we don't lose it."* Validates the question without surrendering the agenda. The doc is a much better venue for working through a real objection than fifteen people watching a clock.
@@ -117,13 +119,13 @@ The meeting shouldn't be a rubber stamp just to get the design through. You genu
 
 I've been on the other side of this too. It's a useful role, and the org genuinely needs you. But there's a useful version and a destructive version, and the line between them is thinner than it feels from the inside.
 
-**Lead with the strongest version of the proposal.** Steel-man before you stress-test. Show that you understood what the proposer was actually trying to do, in their best framing, before you list what could go wrong. This is the single highest-leverage move you can make as a reviewer, and it's almost free.
+**Assume good intent.** Start from the premise that the person proposing the idea is trying to solve a real problem, not sneak something bad past the org. They may be missing context, underestimating a risk, or aiming at the wrong layer of the system. That does not make the proposal careless. If you see a better path, help them get there. The useful version of this role is not pointing at the flaw and walking away. It is helping the team arrive at a solution that survives the concern.
 
 **Propose a path forward, not just a no.** *"This won't work because X"* is one comment. *"What if we add eBPF observability to the existing pipeline first, and let the data tell us where the bottleneck actually is?"* is also one comment. The first ends the conversation. The second moves it onto constructive, additive ground.
 
-**Choose your channel.** Nine comments on a public doc reads as obstruction. The same nine comments delivered in a 1:1 read as care. The content is identical. The framing isn't.
+**Choose the right channel.** If something is seriously wrong, reach out directly first. A quick Slack message lets the author understand the concern before the public review becomes a surprise debate.
 
-**Notice when you're admiring instead of solving.** If you find the *problem* more interesting than any possible *solution*, that's a signal. The role you want to play is "rigorous co-author." The role you want to avoid is "person who enjoys watching ideas die." The first is rare and valuable. The second is common and corrosive, and it's often hard to tell which one you are without asking.
+**Notice when you're admiring instead of solving.** If you find the *problem* more interesting than any possible *solution*, that's a signal. The role you want to play is "rigorous co-author." The role you want to avoid is "person who enjoys watching ideas die." The first is rare and valuable. The second is common and corrosive, and it is harder to distinguish from the inside than most people think.
 
 ### Wrapping Up
 
