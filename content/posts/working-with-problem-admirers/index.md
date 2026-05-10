@@ -80,9 +80,11 @@ A reframe table I keep in my head when I feel my shoulders tightening at a comme
 
 | What it sounds like | What it actually is |
 | --- | --- |
-| "I don't think our team should merge into the monorepo, it'll slow us down" | The actual blocker for the migration, surfaced for free |
-| "We tried this in 2022" | Free historical context |
-| "Hope is not a strategy. Do we have any data on whether this is net faster?" | A reminder to put measurements in the design |
+| "This will slow our team down." | The adoption risk that decides whether the migration works in practice. |
+| "We tried this in 2022." | A request to understand what failed last time before repeating it. |
+| "Do we have data showing this is net faster?" | Pressure to turn the proposal from intuition into an experiment. |
+| "What happens when this breaks during a release?" | A missing rollback or ownership plan. |
+| "Who is going to maintain this after the initial push?" | A lifecycle concern, not bikeshedding. |
 
 ### Why The Dynamic Is So Hard
 
