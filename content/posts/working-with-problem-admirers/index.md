@@ -16,7 +16,7 @@ draft: false
 
 ### The 400-Repo Tax
 
-A friend was telling me about a company he works at with around 400 repos. Someone proposed a small process change: let three trusted staff SREs bump a shared internal API version across all repos without per-team approval. The change was mechanical. The risk was bounded. The blast radius was understood, and the alternative was 400 PRs, one per team, dragged through 400 different reviewers on 400 different priority lists.
+A friend was telling me about a company he works at with around 400 repos. Someone proposed a small process change: let three trusted staff SREs bump a shared internal API version across all repos without per-team approval. The change was mechanical and didn't really need per-repo review, given the alternative was 400 PRs, one per team, dragged through 400 different reviewers on 400 different priority lists.
 
 The proposal didn't get rejected. It died by a thousand questions.
 
