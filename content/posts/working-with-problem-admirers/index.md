@@ -26,7 +26,7 @@ The proposal didn't get rejected. It died by a thousand questions.
 >
 > *Why are we taking on a risky new operation when nobody's asked for it?*
 >
-> *Shouldn't every repo owner have a say in how their repo gets changed? The day this breaks something, they're going to come straight at us.*
+> *What's the communication plan for repo owners? If this changes CI behavior, people need to know what is changing, when it is happening, and how to get help if it breaks.*
 
 Each question was reasonable in isolation, but cumulatively they were fatal. The proposal sat. Months passed. Eventually 400 PRs went out the normal way, the way the proposal was designed to avoid. Some never landed. The version drift the proposal was meant to *prevent* got worse the longer the proposal was being debated.
 
