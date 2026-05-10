@@ -42,7 +42,7 @@ Most of them aren't blockers. They're risk-sensitive engineers using the wrong i
 
 The 400-repo story is what happens when problem admirers win. There's a symmetric failure mode I want to be honest about, because I've lived the other side of it.
 
-A few years back I proposed using Docker for our hardware-in-the-loop (HIL) orchestration computers. The premise was clean. Every automated test should run against an identical set of dependencies. No more *"works on my HIL rig."* Pin the Dockerfile, ship the image, run the same thing everywhere.
+A while back, I proposed using Docker for our hardware-in-the-loop (HIL) orchestration computers. The premise was clean. Every automated test should run against an identical set of dependencies. No more *"works on my HIL rig."* Pin the Dockerfile, ship the image, run the same thing everywhere.
 
 It was a good idea. It still is.
 
