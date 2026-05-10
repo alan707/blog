@@ -34,7 +34,7 @@ If you've worked at any company larger than about 15 engineers, you already know
 
 *(If you can't think of who yours is, there's a non-zero chance it's you. We'll come back to that.)*
 
-I'll call these folks **problem admirers**: people who genuinely love thinking about everything that could go wrong with your idea, and who, with the best of intentions, will talk a good proposal into a slow death.
+I'll call these folks **problem admirers**: people who are very good at seeing everything that could go wrong with an idea, but do not always feel responsible for helping it become stronger.
 
 Most of them aren't blockers. They're risk-sensitive engineers using the wrong interface.
 
