@@ -89,9 +89,8 @@ A reframe table I keep in my head when I feel my shoulders tightening at a comme
 If problem admirers are net positive, why does working with them feel so terrible?
 
 - **Asymmetry of effort.** A thirty-second objection generates three hours of work. *"What I'd like to see is validation that this won't break compatibility with a release that's five years old."* Twelve seconds to type, a week to run down. Multiply by nine comments and you've generated someone's quarter from an afternoon of doc-scrolling and morning coffee.
-- **They rarely propose solutions.** They see themselves as a quality filter, not a co-author, so the objection lands and sits there, an unanswered question with your name attached to it.
-- **Public-channel objections feel like attacks**, even when they're not intended that way. Nine comments on a doc that goes to twenty people reads, to the proposer, like being called out in front of twenty people.
-- **A subset are status-driven.** They want to be seen as the smartest person on the thread. The strategies in this post still work on them, sometimes better, because status-driven problem admirers respond strongly to being given a real role.
+- **They rarely propose solutions.**  (I was going to leave this one blank because that is exactly what a problem admirer's comment would look like). Jokes aside, the lack of solutions seems a bit adversarial, but they feel like they're helping by pointing out the gaps. 
+- **Public-channel objections feel like attacks**, even when they're not intended that way. When someone realizes their design doc is littered with comments, the proposer feels called out publicly.
 
 And on their side, the part that's easy to forget: **they've often been right before**. They've watched proposals ship over their objections, hi, and seen the predicted issues land in production six weeks later. Their nitpicking is a *learned response* to organizations that didn't take risk seriously the last time around. The behavior that looks obstructive from your side often started as the right call in a previous role, and got calibrated up over a decade of being half-listened-to.
 
@@ -104,10 +103,7 @@ If there's one sentence to take from this post, it's this: *never let a problem 
 A handful of tactics that have worked for me, in roughly the order I deploy them.
 
 - **Book a 20-minute pre-meeting 1:1.** *"I want to get your read on this before I send it around."* That's the whole pitch. Buys their best objections in a low-stakes setting and gives them ownership of the doc. The move I should have made before HIL.
-- **Ask for objections explicitly.** *"What's the strongest argument against this?"* Phrase it as a steel-man request, not a risk dump. Most problem admirers light up. It's the version of their job they actually want to be doing.
-- **Build the "Alternatives Considered" section *first*.** Before the proposal itself. Pre-load the predictable objections with worked-out answers. Pre-empts most of the comments you'd otherwise eat in the review.
-- **Bring data for the top 3 predictable objections.** *"I think it's stable"* is an opinion. *"50 green runs on one VM, 50 more on another"* ends the conversation.
-- **Find the need underneath the nitpick.** The surface objection often isn't the real concern. They got burned by a similar project, they own the system you're touching, their team got dinged for an adjacent outage. Address the underlying thing and the surface objections quiet down.
+- **Send a Slack message with the main points first.** Ask for feedback before sending the actual proposal.
 
 ### In the Meeting Itself
 
