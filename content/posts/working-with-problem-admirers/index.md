@@ -123,7 +123,7 @@ I've been on the other side of this too. It's a useful role, and the org genuine
 
 **Propose a path forward, not just a no.** *"This won't work because X"* is one comment. *"What if we add eBPF observability to the existing pipeline first, and let the data tell us where the bottleneck actually is?"* is also one comment. The first ends the conversation. The second moves it onto constructive, additive ground.
 
-**Choose your channel.** Nine comments on a public doc reads as obstruction. The same nine comments delivered in a 1:1 read as care. The content is identical. The framing isn't.
+**Choose the right channel.** If something is seriously wrong, reach out directly first. A quick Slack message lets the author understand the concern before the public review becomes a surprise debate.
 
 **Notice when you're admiring instead of solving.** If you find the *problem* more interesting than any possible *solution*, that's a signal. The role you want to play is "rigorous co-author." The role you want to avoid is "person who enjoys watching ideas die." The first is rare and valuable. The second is common and corrosive, and it's often hard to tell which one you are without asking.
 
