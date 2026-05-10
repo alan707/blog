@@ -10,19 +10,28 @@ draft: false
 **TL;DR.** Problem admirers feel like blockers, but if you handle them right *before* the design review, they're often the most valuable reviewers you have. Their objections become your FAQ. Ignore them and you ship with avoidable wounds. Listen too much and the project dies in committee. This post is about threading that needle.
 
 <figure style="text-align: center;">
-  <img src="bertram_gilfoyle_in_silicon_valley.webp" alt="Bertram Gilfoyle from HBO's Silicon Valley" style="max-width: 100%; height: auto;">
+  <img src="bertram_gilfoyle_in_silicon_valley.webp" alt="Bertram Gilfoyle from HBO's Silicon Valley" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
   <figcaption>Every org has its Gilfoyle. <em>Silicon Valley</em> (HBO).</figcaption>
 </figure>
 
 ### The 400-Repo Tax
 
-A friend was telling me about a company he works at with around 400 repos. Someone proposed a small process change: let three trusted staff SREs bump a shared internal API version across all repos without per-team approval. The change was mechanical. The risk was bounded. The blast radius was understood, and the alternative was 400 PRs, one per team, dragged through 400 different reviewers on 400 different priority lists.
+A friend was telling me about a company he works at with around 400 repos. Someone proposed a small process change: let three trusted staff SREs bump a shared internal API version across all repos without per-team approval. The change was mechanical and didn't need per-repo review.
 
 The proposal didn't get rejected. It died by a thousand questions.
 
-Are we sure we want to override the existing process here? What problem are we actually trying to solve? Things seem to be working. Why are we taking on a risky new operation when nobody's asked for it? And shouldn't every repo owner have a say in how their repo gets changed? Because the day this breaks something, they're going to come straight at us.
+```
+Are we sure we want to override the existing process here?
 
-Each question was reasonable in isolation. Each one was something a careful person should ask. Cumulatively, they were fatal. The proposal sat. Then it got tabled. Then it got tabled again. Months passed. Eventually 400 PRs went out the normal way, the way the proposal was designed to avoid. Some never landed. The version drift the proposal was meant to *prevent* got worse the longer the proposal was being debated.
+What problem are we actually trying to solve? Things seem to be working.
+
+Why are we taking on a risky new operation when nobody's asked for it?
+
+Shouldn't every repo owner have a say in how their repo gets changed?
+The day this breaks something, they're going to come straight at us.
+```
+
+Each question was reasonable in isolation, but cumulatively they were fatal. The proposal sat. Months passed. Eventually 400 PRs went out the normal way, the way the proposal was designed to avoid. Some never landed. The version drift the proposal was meant to *prevent* got worse the longer the proposal was being debated.
 
 If you've worked at any company larger than about 15 engineers, you already know this person. Every org has one. They're often senior, often respected, often technically excellent, which is exactly why the room takes their objections seriously. They're not the loud cynic everyone has learned to discount. They're the careful, thoughtful person whose nine "but what about" Google Docs comments will get treated as nine real questions, even when the cumulative effect is paralysis.
 
@@ -34,7 +43,7 @@ I'll call these folks **problem admirers**: people who genuinely love thinking a
 
 The 400-repo story is what happens when problem admirers win. There's a symmetric failure mode I want to be honest about, because I've lived the other side of it.
 
-A few years back I proposed using Docker for our hardware-in-the-loop (HIL) orchestration computers. The premise was clean. Every automated test should run against an identical set of dependencies. No more *"works on my HIL rig."* No more debugging environment drift at 11pm before a release. No more the-test-only-passes-on-rig-7. Pin the Dockerfile, ship the image, run the same thing everywhere.
+A few years back I proposed using Docker for our hardware-in-the-loop (HIL) orchestration computers. The premise was clean. Every automated test should run against an identical set of dependencies. No more *"works on my HIL rig."* Pin the Dockerfile, ship the image, run the same thing everywhere.
 
 It was a good idea. It still is.
 
@@ -53,13 +62,13 @@ So: two failure modes on the table.
 
 The strategies in this post are about threading that needle.
 
-### Why They're Actually Net Positive
+### Why We Still Need Problem Admirers
 
 It took me a while to internalize this, but the problem admirer is, more often than not, *helping*. The trick is that the help arrives in a costume that looks like obstruction.
 
 A few reframes that helped me get there.
 
-**They pre-test your idea against reality.** Every "but what about X" is a free QA pass, if you can hear it before the meeting instead of in the review itself. The objection that lands at the design review is the same objection you would have eaten in production six weeks later. It's better to spend an hour on it now.
+**They help make your idea better.** Every "but what about X" is a free QA pass, if you can hear it before the meeting instead of in the review itself. The objection that lands at the design review is the same objection you would have eaten in production six weeks later. It's better to spend an hour on it now.
 
 **They surface institutional memory.** They remember the 2021 attempt that failed, and *why*. They know why that library still needs the local patch, why nobody dares bump that dependency, which "simple" migration is anything but. New hires can't give you that. Even staff engineers two years in usually can't. The problem admirer often can, and the proposal you write after talking to them is one that doesn't repeat a mistake your org has already paid for.
 
@@ -80,9 +89,8 @@ A reframe table I keep in my head when I feel my shoulders tightening at a comme
 If problem admirers are net positive, why does working with them feel so terrible?
 
 - **Asymmetry of effort.** A thirty-second objection generates three hours of work. *"What I'd like to see is validation that this won't break compatibility with a release that's five years old."* Twelve seconds to type, a week to run down. Multiply by nine comments and you've generated someone's quarter from an afternoon of doc-scrolling and morning coffee.
-- **They rarely propose solutions.** They see themselves as a quality filter, not a co-author, so the objection lands and sits there, an unanswered question with your name attached to it.
-- **Public-channel objections feel like attacks**, even when they're not intended that way. Nine comments on a doc that goes to twenty people reads, to the proposer, like being called out in front of twenty people.
-- **A subset are status-driven.** They want to be seen as the smartest person on the thread. The strategies in this post still work on them, sometimes better, because status-driven problem admirers respond strongly to being given a real role.
+- **They rarely propose solutions.**  (I was going to leave this one blank because that is exactly what a problem admirer's comment would look like). Jokes aside, the lack of solutions seems a bit adversarial, but they feel like they're helping by pointing out the gaps. 
+- **Public-channel objections feel like attacks**, even when they're not intended that way. When someone realizes their design doc is littered with comments, the proposer feels called out publicly.
 
 And on their side, the part that's easy to forget: **they've often been right before**. They've watched proposals ship over their objections, hi, and seen the predicted issues land in production six weeks later. Their nitpicking is a *learned response* to organizations that didn't take risk seriously the last time around. The behavior that looks obstructive from your side often started as the right call in a previous role, and got calibrated up over a decade of being half-listened-to.
 
@@ -95,18 +103,15 @@ If there's one sentence to take from this post, it's this: *never let a problem 
 A handful of tactics that have worked for me, in roughly the order I deploy them.
 
 - **Book a 20-minute pre-meeting 1:1.** *"I want to get your read on this before I send it around."* That's the whole pitch. Buys their best objections in a low-stakes setting and gives them ownership of the doc. The move I should have made before HIL.
-- **Ask for objections explicitly.** *"What's the strongest argument against this?"* Phrase it as a steel-man request, not a risk dump. Most problem admirers light up. It's the version of their job they actually want to be doing.
-- **Build the "Alternatives Considered" section *first*.** Before the proposal itself. Pre-load the predictable objections with worked-out answers. Pre-empts most of the comments you'd otherwise eat in the review.
-- **Bring data for the top 3 predictable objections.** *"I think it's stable"* is an opinion. *"50 green runs on one VM, 50 more on another"* ends the conversation.
-- **Find the need underneath the nitpick.** The surface objection often isn't the real concern. They got burned by a similar project, they own the system you're touching, their team got dinged for an adjacent outage. Address the underlying thing and the surface objections quiet down.
+- **Send a Slack message with the main points first.** Ask for feedback on each major point of your proposal. You'd be surprised how many things they might already agree on. Once you've identified the contention areas, use the meeting to highlight those.
 
 ### In the Meeting Itself
 
-If you've done the pre-work, the meeting mostly takes care of itself. A few things that help.
+The meeting shouldn't be a rubber stamp just to get the design through. You genuinely want feedback on rollout strategy, timeline, and the contention areas you surfaced earlier.
 
 - **Open by thanking your problem admirer by name** for their pre-review feedback. Signals to the room that the work has been vetted, and locks them into a collaborative posture publicly.
 - **Time-box live, escalate async.** When a new objection lands, default to *"Great point, let's take that to the doc so we don't lose it."* Validates the question without surrendering the agenda. The doc is a much better venue for working through a real objection than fifteen people watching a clock.
-- **Distinguish blocking from non-blocking** out loud. *"That's a real concern, but I don't think it should block this review. Let's track it as a follow-up."* Most nitpicks aren't blocking, but they don't get sorted unless someone sorts them.
+- **Distinguish 'agreed' vs 'needs discussion' points** out loud. A live Google Doc with two columns helps: capture agreements, bubble up the ones that need more discussion. Don't try to rush this.
 
 ### A Note If You Are The Problem Admirer
 
@@ -127,5 +132,3 @@ The goal isn't to neutralize problem admirers. It's to channel them. The version
 Back to where we started. The version drift kept getting worse while the proposal was being debated. That's the real cost of letting problem admirers run the room. Not the bad ideas they kill, but the good ones they delay into irrelevance.
 
 So next time you're drafting a proposal, pick the person you're dreading the most, and book the 1:1 first. That one move usually changes the whole arc of the project.
-
-Send the calendar invite.
