@@ -28,7 +28,7 @@ The proposal didn't get rejected. It died by a thousand questions.
 >
 > *Shouldn't every repo owner have a say in how their repo gets changed? The day this breaks something, they're going to come straight at us.*
 
-Each question was reasonable in isolation. Each one was something a careful person should ask. Cumulatively, they were fatal. The proposal sat. Then it got tabled. Then it got tabled again. Months passed. Eventually 400 PRs went out the normal way, the way the proposal was designed to avoid. Some never landed. The version drift the proposal was meant to *prevent* got worse the longer the proposal was being debated.
+Each question was reasonable in isolation. Each one was something a careful person should ask. Cumulatively, they were fatal. The proposal sat. Months passed. Eventually 400 PRs went out the normal way, the way the proposal was designed to avoid. Some never landed. The version drift the proposal was meant to *prevent* got worse the longer the proposal was being debated.
 
 If you've worked at any company larger than about 15 engineers, you already know this person. Every org has one. They're often senior, often respected, often technically excellent, which is exactly why the room takes their objections seriously. They're not the loud cynic everyone has learned to discount. They're the careful, thoughtful person whose nine "but what about" Google Docs comments will get treated as nine real questions, even when the cumulative effect is paralysis.
 
