@@ -62,7 +62,7 @@ So: two failure modes on the table.
 
 The strategies in this post are about threading that needle.
 
-### Why They're Actually Net Positive
+### Why We Still Need Problem Admirers
 
 It took me a while to internalize this, but the problem admirer is, more often than not, *helping*. The trick is that the help arrives in a costume that looks like obstruction.
 
