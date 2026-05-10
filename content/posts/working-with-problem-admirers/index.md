@@ -10,7 +10,7 @@ draft: false
 **TL;DR.** Problem admirers feel like blockers, but if you handle them right *before* the design review, they're often the most valuable reviewers you have. Their objections become your FAQ. Ignore them and you ship with avoidable wounds. Listen too much and the project dies in committee. This post is about threading that needle.
 
 <figure style="text-align: center;">
-  <img src="bertram_gilfoyle_in_silicon_valley.webp" alt="Bertram Gilfoyle from HBO's Silicon Valley" style="max-width: 100%; height: auto;">
+  <img src="bertram_gilfoyle_in_silicon_valley.webp" alt="Bertram Gilfoyle from HBO's Silicon Valley" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
   <figcaption>Every org has its Gilfoyle. <em>Silicon Valley</em> (HBO).</figcaption>
 </figure>
 
