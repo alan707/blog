@@ -103,15 +103,15 @@ If there's one sentence to take from this post, it's this: *never let a problem 
 A handful of tactics that have worked for me, in roughly the order I deploy them.
 
 - **Book a 20-minute pre-meeting 1:1.** *"I want to get your read on this before I send it around."* That's the whole pitch. Buys their best objections in a low-stakes setting and gives them ownership of the doc. The move I should have made before HIL.
-- **Send a Slack message with the main points first.** Ask for feedback before sending the actual proposal.
+- **Send a Slack message with the main points first.** Ask for feedback on each major point of your proposal. You'd be surprised how many things they might already agree on. Once you've identified the contention areas, use the meeting to highlight those.
 
 ### In the Meeting Itself
 
-If you've done the pre-work, the meeting mostly takes care of itself. A few things that help.
+The meeting shouldn't be a rubber stamp just to get the design through. You genuinely want feedback on rollout strategy, timeline, and the contention areas you surfaced earlier.
 
 - **Open by thanking your problem admirer by name** for their pre-review feedback. Signals to the room that the work has been vetted, and locks them into a collaborative posture publicly.
 - **Time-box live, escalate async.** When a new objection lands, default to *"Great point, let's take that to the doc so we don't lose it."* Validates the question without surrendering the agenda. The doc is a much better venue for working through a real objection than fifteen people watching a clock.
-- **Distinguish blocking from non-blocking** out loud. *"That's a real concern, but I don't think it should block this review. Let's track it as a follow-up."* Most nitpicks aren't blocking, but they don't get sorted unless someone sorts them.
+- **Distinguish 'agreed' vs 'needs discussion' points** out loud. A live Google Doc with two columns helps: capture agreements, bubble up the ones that need more discussion. Don't try to rush this.
 
 ### A Note If You Are The Problem Admirer
 
