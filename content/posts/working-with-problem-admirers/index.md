@@ -70,7 +70,7 @@ It took me a while to internalize this, but the problem admirer is, more often t
 
 A few reframes that helped me get there.
 
-**They help make your idea better.** Every "but what about X" is the same objection you would have eaten at the design review or in production six weeks later. Satisfy your problem admirer beforehand and the room's questions feel familiar, because they're literally the same questions. The problem admirer has done your prep for you.
+**They help make your idea better.** Every "but what about X" is a free QA pass, if you can hear it before the meeting instead of in the review itself. The objection that lands at the design review is the same objection you would have eaten in production six weeks later. It's better to spend an hour on it now.
 
 **They surface institutional memory.** They remember the 2021 attempt that failed, and *why*. They know why that library still needs the local patch, why nobody dares bump that dependency, which "simple" migration is anything but. New hires can't give you that. Even staff engineers two years in usually can't. The problem admirer often can, and the proposal you write after talking to them is one that doesn't repeat a mistake your org has already paid for.
 
