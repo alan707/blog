@@ -14,6 +14,8 @@ draft: false
   <figcaption>Every org has its Gilfoyle. <em>Silicon Valley</em> (HBO).</figcaption>
 </figure>
 
+What makes this pattern dangerous isn't a loud "no." It's the slow accumulation of reasonable-sounding questions that adds up to paralysis. I keep hearing variations of the same story from friends at other companies. Here's a recent one.
+
 ### The 400-Repo Tax
 
 A friend was telling me about a company he works at with around 400 repos. Someone proposed a small process change: let three trusted staff SREs bump a shared internal API version across all repos without per-team approval. The change was mechanical and didn't need per-repo review.
