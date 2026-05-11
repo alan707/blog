@@ -18,7 +18,7 @@ There's a kind of person in every company who is very good at pointing out probl
 
 ### The 400-Repo Tax
 
-A friend was telling me about a company he works at with around 400 repos. Someone proposed a small process change: let three trusted staff SREs bump a shared internal API version across all repos without per-team approval. The change was mechanical and didn't need per-repo review. The API has been validated thoroughly.
+A friend was telling me about a company he works at with around 400 repos. Someone proposed a small process change: let three trusted staff SREs bump a shared internal API version across all repos without per-team approval. The change was mechanical and didn't need per-repo review. The API had been validated thoroughly.
 
 The proposal didn't get rejected. It died by a thousand questions.
 
