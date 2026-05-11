@@ -97,23 +97,23 @@ And on their side, the part that's easy to forget: **they've often been right be
 
 That doesn't mean you have to absorb every objection. But it does mean the dynamic isn't really about you. You're inheriting a relationship the problem admirer has with every proposal they've ever reviewed.
 
-### The Fix: Work With Them Before the Meeting
+### The Fix: Work With Them Before the Design Review Meeting
 
 The thing that works, when I remember to do it, is simple. Never let a problem admirer hear your idea for the first time in the design review. Everything else flows from that.
 
 The move I should've made before steamrolling the Docker implementation on the hardware-in-the-loop test benches is now obvious: agree with the problem admirer ahead of time, back when they first started voicing concerns in the Google Doc.
 
-A Slack thread works too, sometimes better. Lay out the main points and ask for feedback on each. You'd be surprised how many they already agree with. The meeting is then for the ones that remain.
+A Slack thread works too, sometimes better. Lay out the main points and ask for feedback on each. You'd be surprised how many they already agree with. The design review meeting is then for the ones that remain.
 
 > Not every objection deserves equal weight. A good objection changes the design, rollout, measurement, or rollback. A weak objection only expands the possibility space. Your job isn't to answer every possible concern. It's to separate material risk from speculative drag.
 
-### In the Meeting Itself
+### In the Design Review Meeting
 
-The meeting shouldn't be a rubber stamp. You still want feedback on rollout, timeline, and the contention areas you surfaced earlier.
+The design review meeting shouldn't be a rubber stamp. You still want feedback on rollout, timeline, and the contention areas you surfaced earlier.
 
 What I've learned to do first is thank the problem admirer by name for their pre-review feedback. It signals to the room that the work has been vetted. It also locks them into a collaborative posture, publicly, before any new objections land.
 
-When a new objection lands in the room, the temptation is to argue it on the spot. Don't. *"Great point, let's take that to the doc so we don't lose it"* is the better move. A real objection is worth thinking through in writing. A live meeting is for deciding what's already agreed, not for working through fresh risk in front of an audience.
+When a new objection lands in the room, the temptation is to argue it on the spot. Don't. *"Great point, let's take that to the doc so we don't lose it"* is the better move. A real objection is worth thinking through in writing. A live design review meeting is for deciding what's already agreed, not for working through fresh risk in front of an audience.
 
 A live two-column Google Doc helps with that: agreements on one side, things that need more discussion on the other. Don't rush this part.
 
