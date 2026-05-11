@@ -136,3 +136,7 @@ The goal isn't to neutralize problem admirers. It's to channel them. The version
 Back to where we started. The version drift kept getting worse while the proposal was being debated. That's the real cost of letting problem admirers run the room. Not the bad ideas they kill, but the good ones they delay into irrelevance.
 
 The people you find hardest to work with are often the ones whose objections, once you take the trouble to hear them, were the most worth having. You usually only learn this after a few projects where you didn't.
+
+---
+
+**Thanks** to Paul Burris for reading drafts of this.
