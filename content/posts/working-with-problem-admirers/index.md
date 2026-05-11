@@ -14,7 +14,7 @@ draft: false
   <figcaption>Every org has its Gilfoyle. <em>Silicon Valley</em> (HBO).</figcaption>
 </figure>
 
-There's a kind of person in every company who is very good at pointing out problems in a design but rarely follows up with ways to overcome the issue they identified. In small doses, spotting blindsides is one of the most useful skills in an organization. In large doses it can create an engineering culture that is too cautious to make ambitious changes.
+There's a kind of person in every company who is very good at pointing out problems in a proposed design. That is not a bad trait. In small doses, it is one of the most useful instincts an organization can have. But when the critique ends at “this might break,” and there's no follow-up to help find a path through it, the culture starts optimizing against risk instead of toward progress.
 
 ### The 400-Repo Tax
 
