@@ -111,7 +111,7 @@ The meeting shouldn't be a rubber stamp. You still want feedback on rollout, tim
 
 What I've learned to do first is thank the problem admirer by name for their pre-review feedback. It signals to the room that the work has been vetted. It also locks them into a collaborative posture, publicly, before any new objections land.
 
-When a new objection lands in the room, the temptation is to argue it on the spot. Don't. *"Great point, let's take that to the doc so we don't lose it"* works better than fifteen people watching a clock. The doc is the right venue for a real objection. The meeting is the right venue for deciding what's already agreed.
+When a new objection lands in the room, the temptation is to argue it on the spot. Don't. *"Great point, let's take that to the doc so we don't lose it"* is the better move. A real objection is worth thinking through in writing. A live meeting is for deciding what's already agreed, not for working through fresh risk in front of an audience.
 
 A live two-column Google Doc helps with that: agreements on one side, things that need more discussion on the other. Don't rush this part.
 
