@@ -99,7 +99,7 @@ That doesn't mean you have to absorb every objection. But it does mean the dynam
 
 The thing that works, when I remember to do it, is simple. Never let a problem admirer hear your idea for the first time in the design review. Everything else flows from that.
 
-The move I should have made before HIL is the obvious one. Book a short conversation. *"I want to get your read on this before I send it around."* That's the whole pitch. It buys their best objections in a low-stakes setting. It gives them ownership of the doc before the room ever sees it.
+The move I should've made before steamrolling the Docker implementation on the hardware-in-the-loop test benches is now obvious: agree with the problem admirer ahead of time, back when they first started voicing concerns in the Google Doc.
 
 A Slack thread works too, sometimes better. Lay out the main points and ask for feedback on each. You'd be surprised how many they already agree with. The meeting is then for the ones that remain.
 
