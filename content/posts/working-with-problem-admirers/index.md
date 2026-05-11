@@ -14,11 +14,11 @@ draft: false
   <figcaption>Every org has its Gilfoyle. <em>Silicon Valley</em> (HBO).</figcaption>
 </figure>
 
-There's a kind of person in every company who is very good at finding problems but rarely proposes them. In small doses this is one of the most useful skills in an organization. In large doses it can create an engineering culture that is too cautious to make ambitious changes.
+There's a kind of person in every company who is very good at pointing out problems in a proposed design. That is not a bad trait. In small doses, it is one of the most useful instincts an organization can have. But when the critique ends at “this might break,” and there's no follow-up to help find a path through it, the culture starts optimizing against risk instead of toward progress.
 
 ### The 400-Repo Tax
 
-A friend was telling me about a company he works at with around 400 repos. Someone proposed a small process change: let three trusted staff SREs bump a shared internal API version across all repos without per-team approval. The change was mechanical and didn't need per-repo review.
+A friend was telling me about a company he works at with around 400 repos. Someone proposed a small process change: let three trusted staff SREs bump a shared internal API version across all repos without per-team approval. The change was mechanical and didn't need per-repo review. The API had been validated thoroughly.
 
 The proposal didn't get rejected. It died by a thousand questions.
 
