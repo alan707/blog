@@ -1,5 +1,5 @@
 ---
-title: "Death by a Thousand Questions: Working With Problem Admirers"
+title: "Working with problem admirers"
 date: 2026-05-10
 tags: ["engineering-culture", "design-reviews", "communication", "career"]
 draft: false
@@ -13,6 +13,8 @@ draft: false
   <img src="bertram_gilfoyle_in_silicon_valley.webp" alt="Bertram Gilfoyle from HBO's Silicon Valley" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
   <figcaption>Every org has its Gilfoyle. <em>Silicon Valley</em> (HBO).</figcaption>
 </figure>
+
+There's a kind of person in every company who is very good at finding problems but rarely proposes them. In small doses this is one of the most useful skills in an organization. In large doses it can create an engineering culture that is too cautious to make ambitious changes.
 
 ### The 400-Repo Tax
 
@@ -30,7 +32,7 @@ The proposal didn't get rejected. It died by a thousand questions.
 
 Each question was reasonable in isolation, but cumulatively they were fatal. The proposal sat. Months passed. Eventually 400 PRs went out the normal way, the way the proposal was designed to avoid. Some never landed. The version drift the proposal was meant to *prevent* got worse the longer the proposal was being debated.
 
-If you've worked at any company larger than about 15 engineers, you already know this person. Every org has one. They're often senior, often respected, often technically excellent, which is exactly why the room takes their objections seriously. They're not the loud cynic everyone has learned to discount. They're the careful, thoughtful person whose nine "but what about" Google Docs comments will get treated as nine real questions, even when the cumulative effect is paralysis.
+If you've worked at any company larger than about 15 engineers, you already know this person. Every org has one. They're often senior, often respected, and technically excellent. That's exactly why the room takes their objections seriously. They're not the loud cynic everyone has learned to discount. They're the careful, thoughtful person whose nine "but what about" Google Docs comments will get treated as nine real questions, even when the cumulative effect is paralysis.
 
 *(If you can't think of who yours is, there's a non-zero chance it's you. We'll come back to that.)*
 
@@ -46,11 +48,11 @@ A while back, I proposed using Docker for our hardware-in-the-loop (HIL) orchest
 
 It was a good idea. It still is.
 
-There was a problem admirer in the org at the time. They had concerns. Specific ones. Something about local dev getting harder. Something about hiding context the engineers used during debugging. Something about the inner loop on a working rig.
+There was a problem admirer in the org at the time. They had concerns. Specific ones. Something about local dev getting harder. Something about hiding context the engineers used during debugging. Something about iteration speed on a working rig.
 
 I steamrolled. I had leadership's blessing and expectations to deliver. The objections felt like a personal nitpick, not real engineering arguments. So I shipped it org-wide.
 
-The complaints came in waves over the next quarter. Local dev *did* get harder. The inner loop *did* slow down for engineers who used to iterate against bare metal. The Docker layer *wasn't* super ergonomic. None of these killed the project. But they were real, they cost engineering time, and they were almost exactly what the problem admirer had flagged in the design doc comments. The ones I'd waved off with *"will address in subsequent revisions"* or something equally hand-wavy.
+The complaints came in waves over the next quarter. Local dev *did* get harder. Iteration *did* slow down for engineers who used to work directly against bare metal. The Docker layer *wasn't* super ergonomic. None of these killed the project. But they were real. They cost engineering time. They were almost exactly what the problem admirer had flagged in the design doc comments. The ones I'd waved off with *"will address in subsequent revisions"* or something equally hand-wavy.
 
 The version of that project that listened to them would have been the same project, six weeks later, with three small mitigations baked in. I would have spent those six weeks doing something else. Instead I spent them responding to Slack pings about real blockers: HIL benches that wouldn't run, CI red from automated tests failing.
 
@@ -87,32 +89,33 @@ A reframe table I keep in my head when I feel my shoulders tightening at a comme
 
 If problem admirers are net positive, why does working with them feel so terrible?
 
-- **Asymmetry of effort.** A thirty-second objection can generate three hours of work. *"What I'd like to see is validation that this won't break compatibility with a release that's five years old."* Twelve seconds to type, a week to run down. That is the hidden cost of casual skepticism: it can turn a review into an unplanned project.
+- **Asymmetry of effort.** A thirty-second objection can generate three hours of work. *"What I'd like to see is validation that this won't break compatibility with a release that's five years old."* Twelve seconds to type. A week to run down. That's the hidden cost of casual skepticism. It can turn a review into an unplanned project.
 - **They rarely propose solutions.**  (I was going to leave this one blank because that is exactly what a problem admirer's comment would look like). Jokes aside, the lack of solutions seems a bit adversarial, but they feel like they're helping by pointing out the gaps. 
 - **Public-channel objections feel like attacks**, even when they're not intended that way. When someone realizes their design doc is littered with comments, the proposer feels called out publicly.
 
-And on their side, the part that's easy to forget: **they've often been right before**. They've watched proposals ship over their objections, hi, and seen the predicted issues land in production six weeks later. Their nitpicking is a *learned response* to organizations that didn't take risk seriously the last time around. The behavior that looks obstructive from your side often started as the right call in a previous role, and got calibrated up over a decade of being half-listened-to.
+And on their side, the part that's easy to forget: **they've often been right before**. They've watched proposals ship over their objections. They've seen the predicted issues land in production six weeks later. Their nitpicking is a *learned response*. It comes from organizations that didn't take risk seriously the last time around. The behavior that looks obstructive from your side often started as the right call in a previous role. It got calibrated up over a decade of being half-listened-to.
 
 That doesn't mean you have to absorb every objection. But it does mean the dynamic isn't really about you. You're inheriting a relationship the problem admirer has with every proposal they've ever reviewed.
 
-### The Fix: Work With Them Before the Meeting
+### The Fix: Work With Them Before the Design Review Meeting
 
-If there's one sentence to take from this post, it's this: *never let a problem admirer hear your idea for the first time in the design review.* Everything else flows from that.
+The thing that works, when I remember to do it, is simple. Never let a problem admirer hear your idea for the first time in the design review. Everything else flows from that.
 
-A handful of tactics that have worked for me, in roughly the order I deploy them.
+The move I should've made before steamrolling the Docker implementation on the hardware-in-the-loop test benches is now obvious: agree with the problem admirer ahead of time, back when they first started voicing concerns in the Google Doc.
 
-- **Book a 20-minute pre-meeting 1:1.** *"I want to get your read on this before I send it around."* That's the whole pitch. Buys their best objections in a low-stakes setting and gives them ownership of the doc. The move I should have made before HIL.
-- **Send a Slack message with the main points first.** Ask for feedback on each major point of your proposal. You'd be surprised how many things they might already agree on. Once you've identified the contention areas, use the meeting to highlight those.
+A Slack thread works too, sometimes better. Lay out the main points and ask for feedback on each. You'd be surprised how many they already agree with. The design review meeting is then for the ones that remain.
 
 > Not every objection deserves equal weight. A good objection changes the design, rollout, measurement, or rollback. A weak objection only expands the possibility space. Your job isn't to answer every possible concern. It's to separate material risk from speculative drag.
 
-### In the Meeting Itself
+### In the Design Review Meeting
 
-The meeting shouldn't be a rubber stamp just to get the design through. You genuinely want feedback on rollout strategy, timeline, and the contention areas surfaced earlier.
+The design review meeting shouldn't be a rubber stamp. You still want feedback on rollout, timeline, and the contention areas you surfaced earlier.
 
-- **Open by thanking your problem admirer by name** for their pre-review feedback. Signals to the room that the work has been vetted, and locks them into a collaborative posture publicly.
-- **Time-box live, escalate async.** When a new objection lands, default to *"Great point, let's take that to the doc so we don't lose it."* Validates the question without surrendering the agenda. The doc is a much better venue for working through a real objection than fifteen people watching a clock.
-- **Distinguish 'agreed' vs 'needs discussion' points** out loud. A live Google Doc with two columns helps: capture agreements, bubble up the ones that need more discussion. Don't try to rush this.
+What I've learned to do first is thank the problem admirer by name for their pre-review feedback. It signals to the room that the work has been vetted. It also locks them into a collaborative posture, publicly, before any new objections land.
+
+When a new objection lands in the room, the temptation is to argue it on the spot. Don't. *"Great point, let's take that to the doc so we don't lose it"* is the better move. A real objection is worth thinking through in writing. A live meeting is for deciding what's already agreed, not for working through fresh risk in front of an audience.
+
+A live two-column Google Doc helps with that: agreements on one side, things that need more discussion on the other. Don't rush this part.
 
 ### A Note If You Are The Problem Admirer
 
@@ -132,4 +135,4 @@ The goal isn't to neutralize problem admirers. It's to channel them. The version
 
 Back to where we started. The version drift kept getting worse while the proposal was being debated. That's the real cost of letting problem admirers run the room. Not the bad ideas they kill, but the good ones they delay into irrelevance.
 
-So next time you're drafting a proposal, pick the person you're dreading the most, and book the 1:1 first. That one move usually changes the whole arc of the project.
+The people you find hardest to work with are often the ones whose objections, once you take the trouble to hear them, were the most worth having. You usually only learn this after a few projects where you didn't.
