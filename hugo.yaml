@@ -11,6 +11,7 @@ params:
   env: "production"
   defaultTheme: light
   disableThemeToggle: false
+  posthog_api_key: "phc_qgxrH5dFRwrjfTKbriw8hzodSfiHNuqC7CbsCKbTY5XS"
 
 # Google Analytics configuration
 services:
