@@ -27,6 +27,10 @@ WORKDIR /site
 # Copy the entire project into the container
 COPY . .
 
+# Receive PostHog key from DO build-time env var
+ARG HUGO_PARAMS_POSTHOG_API_KEY
+ENV HUGO_PARAMS_POSTHOG_API_KEY=$HUGO_PARAMS_POSTHOG_API_KEY
+
 # Generate static files in the public directory (optional, for production builds)
 RUN hugo --destination /workspace/public
 
