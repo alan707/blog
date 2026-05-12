@@ -25,3 +25,7 @@ static_sites:
   name: blog
   output_dir: /workspace/public
   source_dir: /
+  envs:
+  - key: HUGO_PARAMS_POSTHOG_API_KEY
+    scope: BUILD_TIME
+    type: SECRET
